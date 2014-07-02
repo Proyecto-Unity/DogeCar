@@ -46,7 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MovimientoAuto.cs" />
+     <Compile Include="Assets\Scripts\Movimiento_Auto.cs" />
+     <Compile Include="Assets\Scripts\NetworkManager.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/ArcadiaX/Documents/Unity Projects/DogeCar/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>

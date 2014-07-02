@@ -28,15 +28,15 @@ public class MovimientoAuto : MonoBehaviour {
 
 		if (Mathf.Abs(Velocidad) < VelocidadMaxima) {
 						//Aceleracion del Auto
-						Llanta1.motorTorque = Aceleracion * Input.GetAxis ("Vertical");
-						Llanta2.motorTorque = Aceleracion * Input.GetAxis ("Vertical");
+			Llanta1.motorTorque = Aceleracion * NuevosAxis ("Vertical");
+			Llanta2.motorTorque = Aceleracion * NuevosAxis ("Vertical");
 		} else {
 				
 			Llanta1.motorTorque = 0;
 			Llanta2.motorTorque = 0;
 		
 		}
-		if (Input.GetAxis ("Vertical") == 0) {
+		if (NuevosAxis ("Vertical") == 0) {
 			Llanta1.brakeTorque = desAceleracion;
 			Llanta2.brakeTorque = desAceleracion;
 		} else {
@@ -45,7 +45,15 @@ public class MovimientoAuto : MonoBehaviour {
 		}
 
 		//Rotacion del Auto
-		Llanta3.steerAngle = -10 * Input.GetAxis ("Horizontal");
-		Llanta4.steerAngle = -10 * Input.GetAxis ("Horizontal");
+		Llanta3.steerAngle = -10 * NuevosAxis ("Horizontal");
+		Llanta4.steerAngle = -10 * NuevosAxis ("Horizontal");
 	}
+
+
+	float NuevosAxis(string Direccion){
+
+		return (Input.GetAxis (Direccion));
+
+	}
+
 }

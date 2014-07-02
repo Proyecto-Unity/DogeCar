@@ -5,7 +5,7 @@ public class Movimiento_Auto : MonoBehaviour {
 
 	public WheelCollider Llanta1, Llanta2, Llanta3, Llanta4;
 	public Transform Neumatico1, Neumatico2, Neumatico3, Neumatico4;
-	public int Aceleracion = 25; 
+	public int Aceleracion = 35; 
 	public int desAceleracion = 50;
 	public float Velocidad;
 	public int VelocidadMaxima = 220;

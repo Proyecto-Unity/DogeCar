@@ -1,24 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class NetworkManager : MonoBehaviour {
 	public Camera NormalCamara;
 	bool connecting = false;
+	List<string> log;
+
 	SpawnSpot[] spawnSpots;
 
 	void Start(){
 		spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
-		Connect();
+		PhotonNetwork.player.name = PlayerPrefs.GetString("Username","Doge");
+		log = new List<string>();
 	}
 
 	void Connect() {
-
-		PhotonNetwork.ConnectUsingSettings ("DogeCar v001");
-		PhotonNetwork.player.name = PlayerPrefs.GetString("Username","Doge");
-
+		PhotonNetwork.ConnectUsingSettings ("DogeCar v1.0.2");
 	}
-
-
 	
 	void OnGUI() {
 		GUILayout.Label( PhotonNetwork.connectionStateDetailed.ToString() );

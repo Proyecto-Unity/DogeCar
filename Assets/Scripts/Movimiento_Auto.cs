@@ -6,20 +6,23 @@ public class Movimiento_Auto : MonoBehaviour {
 	public WheelCollider Llanta1, Llanta2, Llanta3, Llanta4;
 	public Transform Neumatico1, Neumatico2, Neumatico3, Neumatico4;
 	public int Aceleracion = 35; 
-	public int desAceleracion = 50;
+	public int desAceleracion = 65;
 	public float Velocidad;
 	public int VelocidadMaxima = 220;
 	public Texture Velocimetro;
 	public Texture Aguja;
 	int cuentaAngulo = 0;
-	
+
+
 	void Start () {
 		transform.rigidbody.centerOfMass = new Vector3 (0, -1f, 0);
 	}
 	
 	void Update () {
+
 		Neumatico1.localEulerAngles = new Vector3 ((cuentaAngulo * Llanta1.rpm / 60 * 360 * Time.deltaTime), -Llanta3.steerAngle*2, 0);
 		Neumatico2.localEulerAngles = new Vector3 ((cuentaAngulo * Llanta2.rpm / 60 * 360 * Time.deltaTime), -Llanta4.steerAngle*2, 0);
+
 		cuentaAngulo++;
 		if (cuentaAngulo > 360) {
 			cuentaAngulo = 0;

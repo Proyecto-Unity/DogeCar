@@ -1,0 +1,32 @@
+Initialize engine version: 4.5.0f6 (fd4616464986)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA GeForce 9400 GT  (ID=0x641)
+    Vendor:   NVIDIA
+    VRAM:     1005 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.177 seconds
+desktop: 1280x720 75Hz; virtual: 1280x720 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+Platform assembly: C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\ArcadiaX\Documents\Unity Projects\DogeCar\DogeCar_Data\Managed\System.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Joined Lobby
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Joined Room
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
